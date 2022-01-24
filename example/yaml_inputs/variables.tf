@@ -1,14 +1,3 @@
-variable "root_ca_mount_path" {
-  description = "This path to the mount for your root CA. This is required in order to sign your intermediate certificate."
-  type        = string
-  default     = "pki"
-}
-
-variable "mesh_name" {
-  description = "Used as a prefix for spiffe and also to generate the intermediate certificate common name (see 'common_name_suffix')."
-  type        = string
-}
-
 variable "common_name_suffix" {
   description = "Combines with 'mesh_name' to generate a common name for the intermediate certificate."
   type        = string
