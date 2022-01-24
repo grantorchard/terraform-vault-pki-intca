@@ -1,0 +1,3 @@
+---
+root_ca_mount_path: pki_root_ca
+mesh_name: green
